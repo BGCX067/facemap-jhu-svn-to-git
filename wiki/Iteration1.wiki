@@ -1,0 +1,16 @@
+#summary Iteration 1 tasks assignment and state.
+
+= Iteration 1 tasks =
+
+ * Vision statement (written)
+ * Feature/requirement list (written, but needs to be updated)
+ * Domain model (maybe) Daniel (gliffy.com)
+ * GUI sketches (on paper) Ying
+ * Actors (written, probably needs to be updated, fleshed out)
+ * Use cases (need to be filled out, formatted)
+ * Use case diagram for most complex use case (unwritten) Orhan
+ * Proposed architecture (written, may need to be updated)
+ * Resources (written, may need to be updated)
+   * List similar apps
+
+ * Web page: http://ugrad.cs.jhu.edu/~group5/ Need updated info Kevin

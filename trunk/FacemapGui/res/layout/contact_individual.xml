@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+    <RelativeLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/contactIndividualTitleRelativeLayout">
+        <TextView android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:background="@color/blue" android:layout_width="match_parent" android:textStyle="bold" android:gravity="center" android:textSize="40dp" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:paddingRight="20dp" android:text="@string/name1" android:id="@+id/contactIndividualName"></TextView>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:layout_marginLeft="28dp" android:id="@+id/contactIconAtTitle"></ImageView>
+        <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@android:drawable/ic_delete" android:layout_centerVertical="true" android:layout_alignParentRight="true" android:layout_marginRight="26dp" android:id="@+id/contactBlockedImageView"></ImageView>
+    </RelativeLayout>
+    <Button android:layout_height="wrap_content" android:layout_width="match_parent" android:text="@string/sendSMS" android:textSize="20dp" android:id="@+id/sendSMSButton"></Button>
+    <Button android:layout_height="wrap_content" android:layout_width="match_parent" android:text="@string/sendEmail" android:textSize="20dp" android:id="@+id/sendEmailButton"></Button>
+    <Button android:layout_height="wrap_content" android:layout_width="match_parent" android:text="@string/call" android:textSize="20dp" android:id="@+id/callButton"></Button>
+    <Button android:layout_height="wrap_content" android:layout_width="match_parent" android:text="@string/addToGroups" android:textSize="20dp" android:id="@+id/addToGroupsButton"></Button>
+    <Button android:layout_height="wrap_content" android:layout_width="match_parent" android:text="@string/block" android:textSize="20dp" android:id="@+id/blockContactButton"></Button>
+    <Button android:layout_height="wrap_content" android:layout_width="match_parent" android:text="@string/unblock" android:textSize="20dp" android:id="@+id/unblockContactButton"></Button>
+    <Button android:layout_height="wrap_content" android:layout_width="match_parent" android:text="@string/delete" android:textSize="20dp" android:id="@+id/deleteContactButton"></Button>
+    
+</LinearLayout>

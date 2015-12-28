@@ -1,0 +1,15 @@
+#summary Similar apps and features.
+
+= Similar apps =
+
+== Loopt ==
+ * profile page
+ * friend map
+ * ask questions to friends
+ * places
+ * check-in to places
+
+== Glympse ==
+ * only has your location
+ * send location to other people
+ * they can view link to where you are for 15 to 240 minutes

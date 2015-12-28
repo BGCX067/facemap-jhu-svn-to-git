@@ -1,0 +1,9 @@
+#summary Results of team discussion on 11-02-2011
+
+ * Profile concepts in Person class and contain editable picture and description
+ * Client interacts with proxy PrivatePerson
+ * Blocks are composed as sum of person
+ * App must be running and logged in to interact with server
+ * Account id is email/phone#
+ * One phone/one email/one account
+ * Phone/email editable?

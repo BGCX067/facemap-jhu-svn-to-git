@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+    <TextView android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:background="@color/blue" android:layout_width="match_parent" android:textStyle="bold" android:gravity="center" android:textSize="40dp" android:id="@+id/setVisibilityTitle" android:text="@string/setVisibility"></TextView>
+    <TextView android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_width="wrap_content" android:text="@string/visibleTo" android:id="@+id/locationVisibleToString"></TextView>
+    <Button android:layout_height="wrap_content" android:layout_width="match_parent" android:text="@string/nobody" android:textSize="20dp" android:id="@+id/visibleToNobodyButton" android:onClick="VisibleToNobodyButtonClickHandler"></Button>
+    <Button android:layout_height="wrap_content" android:layout_width="match_parent" android:textSize="20dp" android:id="@+id/visibleToAllButton" android:text="@string/everybody" android:onClick="VisibleToAllButtonClickHandler"></Button>
+    
+</LinearLayout>

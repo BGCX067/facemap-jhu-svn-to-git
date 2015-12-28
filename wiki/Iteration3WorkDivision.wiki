@@ -1,0 +1,27 @@
+#summary Work division for iteration 3
+
+Server app
+ - data persistence work (databse, and hibernate, and etc) (Orhan) *
+ - server communication * (Daniel)
+ - (potentially) public web interface
+Client app
+ - GUI impl (Kevin/Ying)
+ - server communication * (Daniel)
+ - using maps api * (Kevin)
+Working and complete and tested (Ying) model *
+
+* highest priority
+
+Project list
+ - domain model
+ - client
+   - client app (ie model)
+   - client gui (ie view/controller)
+ - server
+
+
+Work accomplished:
+Daniel:
+Wrote the domain model and started stubbing out the client and server application classes. Wrote two JUnit tests of basic server functionality in the FacemapClient project.
+
+Researched a variety of client server communication methods including RMI and JAX-WS. Researched various application containers including Spring, ejb3, and JBoss.

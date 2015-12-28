@@ -1,0 +1,29 @@
+#summary Things to do in Iteration 2
+
+= Details =
+
+Things to do for Iteration 2
+  # Color the GUI (Unnecessary)
+  # Clearly identify key vs. extra features or core vs extra use cases
+    # Core:
+      # add/remove/block friend
+      # add/remove/edit(add/remove friend) group
+      # get friend location
+      # create account
+      # communication (text/email)
+      # location map
+    # Extra
+      # remote locate/lock/wipe phone
+      # phone calls from phone
+      # phone calls from computer (VOIP no use case yet)
+      # restrict groups by range
+      # invitations
+      # communication (IM)
+  # Clearly describe all parts of architecture and resources
+  # Class Diagram (Need Diagram)
+  # Deployment Diagram (Need Diagram)
+  # UML Sequence Diagram (Done)
+  # JavaDocs (Done)
+  # Add usecase for communicating with group
+
+  

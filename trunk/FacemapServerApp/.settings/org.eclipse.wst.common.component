@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="FacemapServerApp">
+        <wb-resource deploy-path="/" source-path="/EarContent" tag="defaultRootSource"/>
+        <dependent-module archiveName="FacemapEjb.jar" deploy-path="/" handle="module:/resource/FacemapEjb/FacemapEjb">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="FacemapServer.jar" deploy-path="/lib" handle="module:/resource/FacemapServer/FacemapServer">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="FacemapDomainModel.jar" deploy-path="/lib" handle="module:/resource/FacemapDomainModel/FacemapDomainModel">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="FacemapTest.jar" deploy-path="/lib" handle="module:/resource/FacemapTest/FacemapTest">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="FacemapEntities.jar" deploy-path="/lib" handle="module:/resource/FacemapEntities/FacemapEntities">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="FacemapWeb.war" deploy-path="/" handle="module:/resource/FacemapWeb/FacemapWeb">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+    </wb-module>
+</project-modules>

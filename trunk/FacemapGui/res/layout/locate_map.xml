@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent" android:layout_gravity="center_horizontal">
+    <RelativeLayout android:id="@+id/relativeLayout1" android:layout_height="wrap_content" android:layout_width="match_parent" android:background="@color/blue">
+        <ImageView android:id="@+id/imageView1" android:src="@drawable/icon" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:layout_marginLeft="29dp" android:layout_width="50dp" android:layout_height="50dp"></ImageView>
+        <TextView android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:text="@string/myName" android:id="@+id/name" android:layout_height="wrap_content" android:gravity="center" android:textSize="25dp" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"></TextView>
+        <TextView android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceSmall" android:layout_height="wrap_content" android:layout_below="@+id/name" android:layout_alignLeft="@+id/name" android:id="@+id/updatedTime" android:text="@string/updatedxminago"></TextView>
+        <ImageButton android:layout_height="wrap_content" android:src="@drawable/refresh" android:layout_width="wrap_content" android:id="@+id/imageButton3" android:layout_centerVertical="true" android:layout_alignParentRight="true" android:layout_marginRight="22dp"></ImageButton>
+    </RelativeLayout>
+    <RelativeLayout android:layout_height="wrap_content" android:id="@+id/relativeLayout2" android:layout_width="match_parent">
+        <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:layout_width="wrap_content" android:textSize="25dp" android:textColor="@color/blue" android:id="@+id/numofnum" android:layout_height="wrap_content" android:text="@string/numofnum" android:layout_centerVertical="true" android:layout_alignParentLeft="true"></TextView>
+        <ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_left_blue_24" android:id="@+id/imageButton2" android:layout_alignParentTop="true" android:layout_toRightOf="@+id/numofnum" android:layout_marginLeft="14dp"></ImageButton>
+        <ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_right_blue_24" android:id="@+id/imageButton1" android:layout_alignParentTop="true" android:layout_toRightOf="@+id/imageButton2"></ImageButton>
+        <Button android:layout_width="wrap_content" android:id="@+id/button1" android:text="@string/communicate" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_toRightOf="@+id/imageButton1" android:textColor="@color/blue"></Button>
+    </RelativeLayout>
+    <ImageView android:src="@drawable/map" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/map"></ImageView>
+    
+</LinearLayout>

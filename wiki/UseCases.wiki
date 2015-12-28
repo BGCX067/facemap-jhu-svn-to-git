@@ -1,0 +1,198 @@
+#summary Listing of Use Cases
+==Use cases==
+------------------------------------------
+Use case: create account <br>
+Primary actor: new user <br>
+Secondary actor: facemap server <br>
+Goal: Allow new user to create with the facemap service<br>
+ # New user visits installs/runs app on phone.
+   1.1 New user visits facemap website.
+ # New user selects "register" button.
+ # User enters their information: Name, email address(as account ID),password, phone number is automatically retrieved from phone.
+   3.1 User enters the phone number on the web.
+ # Information is sent to the server and verified.
+   4.1 Information is not correct (Invalid email/phone, account with this email/phone is already created), request to re-enter part of the information is sent.
+   4.2 User receives the request and corrects the information.
+   4.3 The server receives the correct information.
+ # Account is created
+   5.1 The account is created with an inactive tag if the user registers on the web.
+   5.2 The server sends a text with a confirmation number to the phone number provided through on the website.
+   5.3 The user received the text on the phone.
+   5.4 The user types the confirmation number on the web.
+   5.5 The server activates the account.
+       5.5.1 The confirmation is not correct and the server repeats step 5.2.
+
+------------------------------------------
+Use case: add friend <br>
+Primary actor: user <br>
+Secondary actor: facemap server <br>
+Tertiary actor: friend user <br>
+Goal: allow user to add a contact and request the ability to see someone else's phone location <br>
+ # User starts/logs in the app.
+ # User selects Contact from menu.
+ # User selects addFriend button.
+ # User enters the email or phone number.
+   4.1 User clicks "Choose From Phone Contact" button and chooses a contact.
+ # Information is sent to the server.
+ # Server finds an existing account matching the phone/email.
+   6.1 Server does not find an existing account.
+   6.2 Server sends a message to the user to confirm sending a service invitation to the friend (email/SMS).
+   6.3 User confirms.
+       6.3.1 User cancels and the use case ends.
+ # Server sends friendship invitation.
+   7.1 Server sends the service invitation.
+   7.2 Friend user accepts invitation by clicking the link in the email/SMS
+   7.3 Friend user downloads the app and creates a new account.
+ # Friend user receives the friendship invitation.
+ # Friend user accepts friendship invitation.
+   9.1 Friend user does not accept friendship invitation.
+ # Server receives the accepting message and connects the two users.
+   10.1 Server receives the not accepting message and the use case ends.
+ # Server sends a message to the user telling that the friend has accepted the friendship invitation
+
+------------------------------------------
+Use case: delete friend <br>
+Primary actor: user <br>
+Secondary actor: facemap server <br>
+Goal: allow user to permanently unlink with another friend in his list
+ # User selects friend he wants to delete.
+ # User selects "Delete" button.
+ # User confirms deletion.
+ # Delete message sent to server.
+ # Server removes link from the user and his friend.
+ # Server sends update to the user and his friend so they are removed from each other's phone's contact list.
+
+------------------------------------------
+Use case: create group <br>
+Primary actor: user <br>
+Goal: allow user to group their friends <br>
+ # User selects "Contact" and "Group"
+ # User selects createGroup action
+ # User selects friends from a list to add to group
+ # User selects done/save action
+ # Group information sent to the server and saved on server
+
+------------------------------------------
+Use case: delete or block group: <br>
+Primary actor: user <br>
+Secondary actor: server <br>
+Goal: allow user to delete or block an entire group of friends that they have created <br>
+Precondition: user running phone app <br>
+ # User selects "Contact" and "Group"
+ # User selects the group he wants to delete/block
+ # User select deleteGroup or blockGroup action
+ # Action sends to server
+ # server removes the group and send confirmation message to the phone
+ # User phone updates group list
+
+------------------------------------------
+Use case: add group members <br>
+Primary actor: user <br>
+Secondary actor: server <br>
+Goal: allow user to add members to a group <br>
+Precondition: user running phone app <br>
+ # User selects Group of interest
+ # User selects addMember action
+ # User selects friends and confirms
+ # Phone sends message to server and server receives the action
+ # Server updates the group list and sends confirmation to phone
+ # Updated group information saved on phone
+
+------------------------------------------
+Use case: delete/block group members <br>
+Primary actor: user <br>
+Secondary actor: server <br>
+Goal: allow user to edit members in a group <br>
+Precondition: user running phone app <br>
+ # User selects Group of interest
+ # User selects deleteMember/blockMember action
+ # User selects friends and confirms
+ # Phone asks the user to confirm
+ # Phone receives the confirmation and sends message to server
+ # Server receives the message and updates group list
+ # Server sends confirmation to phone
+ # Updated group information saved on phone
+Note: 
+ # block indicates that the blocked person can no longer see or communicate with the user. 
+ # removing member from a group doesn't delete the member permanently, it merely dissociates member with this specific group. If member is no longer part of any group, he/she is moved to an uncategorized group.
+
+------------------------------------------
+Use case: locate friends <br>
+Primary actor: user <br>
+Secondary actors: facemap server, facemap phone app <br>
+Goal: locate friends <br>
+Precondition: user running phone or web app
+ # User selects "Locate"
+ # User selects nearby friends or groups or individual contacts
+ # User selects range of map. Default is 1 mile.
+ # Phone app queries server for location of friends within the range.
+ # Server returns list of friends and updates Nearby Friends group
+ # Phone app presents user with map of friends
+ # Phone app updates Nearby Friends group
+
+------------------------------------------
+Use case: communicate with group <br>
+Primary actor: user <br>
+Secondary actors: facemap server, facemap phone app <br>
+Goal: send a message to the user's nearby friends <br>
+Precondition: user running phone or web app
+ # User locates friends on the map
+   1.1 User selects a group to communicate
+ # User selects sendMessage action
+ # User selects type of communication (text,email)
+ # User enters message
+ # User selects send action
+ # Phone app sends message to all members of the group
+
+------------------------------------------
+Use case: communicate with an individual <br>
+Primary actor: user <br>
+Secondary actors: facemap server, facemap phone app <br>
+Goal: send a message to the user's nearby friends <br>
+Precondition: user running phone or web app
+ # User selects the individual from contact list
+ # User selects type of communication (text,email, IM(extra feature), call(extra feature))
+ # User enters message
+ # User selects send action
+ # Phone app sends message to the friend
+
+------------------------------------------
+??? TO BE DELETED
+Use case: add friends nearby<br>
+Primary actor: user <br>
+Secondary actor: facemap server <br>
+Goal: allow people to add as friends facemap users in the nearby location<br>
+Precondition: user running phone app <br>
+Note: the utility of this use case is very dependent on the number and location of people using the facemap service. There are also privacy concerns with this use case as facemap users may not want random people being able to search for them based on their location unless they are friends<br>
+ # User selects addFriends action
+ # User selects searchNearby
+ # User enters search key (name/email/phone#)
+ # App sends query to server
+ # Server creates list of nearby facemap users
+ # Server searches list and returns matching entries to phone
+ # User selects person from list
+ # User select addFriend action
+ # ... Rest of "add friend" use case follows
+
+------------------------------------------
+Use case: locate lost phone <br>
+Primary actor: user <br>
+Secondary actor: facemap server <br>
+Goal: allow user to locate their lost phone <br>
+Precondition: user has an account with facemap service<br>
+ # User logs into FaceMap web app
+ # User selects locateMyPhone action
+ # Server queries phone for current location
+   # If phone doesn't respond within time limit, server returns last known location
+ # Server displays phone location on googlemap style interface
+
+------------------------------------------
+Use case: remote lock/wipe <br>
+Primary actor: user <br>
+Secondary actor: facemap server, user's phone <br>
+Goal: allow user to lock or wipe their phone in the case that it is stolen <br>
+ # User logs in to facemap web application
+ # User selects lock/wipe action
+ # User confirms action
+ # Facemap server send lock/wipe message to phone
+ # Facemap phone application recieves message and performs task

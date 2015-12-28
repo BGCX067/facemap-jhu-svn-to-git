@@ -1,0 +1,75 @@
+#summary List of requirements/features/use cases
+
+== Vision ==
+We plan to write an android based phone location application with social features. The core application will consist a googlemaps style interface where your friends phone location is marked.
+
+Our application will consist of a client program that runs on the phones and a server application that is responsible for managing account information, friend lists, and etc. 
+
+The server application will be implemented using J2EE technologies.
+
+The client application will run on an Android phone. It will be responsible for responding to location information requests, and presenting friends location information. It will allow grouping of friends for contact purposes.
+
+==Concepts==
+ * Friend: when people are friends, they can see each other's location information in the app 
+ * Profile: image/name
+
+==Features==
+===Lost phone features===
+ * Remote locking of phone
+ * Remote wipe
+ * Locating (lost) phone
+
+===Social features===
+ * circle of friends
+ * select range you want to see people
+ * contact peple who are nearby (text,email,call (conference?), IM)
+ * adding friends - ie whitelist who gets to see your location
+ * create/edit/remove groups of friends
+
+===Location features===
+ * Locating other people on your phone
+ * Marking differnt groups with different colors
+ * Finding nearby friends.
+ * Finding particular friends specified by group of individual.
+
+===More features===
+ * account management
+ * invite people to join service
+ * add/delete friend
+   * add by searching server's list of users by name/email/phone number
+ * block friend - temporary disallow friend from seeing your location
+ * web interface to service
+ * personal profiles
+   * picture, status, personal information, ability to update
+
+== Actors ==
+ * Users - duh
+ * Phone - provides location information, runs user interface
+ * Server - manages accounts, provides web interface, gathers location information, enforces privacy constraints
+
+
+== Resources ==
+ * Android GPS
+ * Android UI libraries
+ * J2EE 
+   * JBoss or glassfish
+   * JSP/JSF
+   * JDBC or Hibernate
+ * Database
+   * MySql or other vendor
+
+== Architecture ==
+===Packages===
+ * phone
+   * ui
+   * model
+ * web UI
+   * ui
+   * model
+ * server
+   * data access layer
+
+===Deployment===
+ * App running on the phone
+ * Server app
+ * Web interface.

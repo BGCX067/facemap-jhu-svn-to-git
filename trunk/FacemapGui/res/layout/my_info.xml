@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/relativeLayout2" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:text="@string/myInfo" android:gravity="center" android:background="@color/blue" android:layout_width="match_parent" android:textAppearance="?android:attr/textAppearanceLarge" android:textStyle="bold" android:id="@+id/myInfoTitle" android:textSize="40dp" android:layout_height="wrap_content"></TextView>
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:id="@+id/logoutButton" android:text="@string/logout" android:onClick="MyInfoLogoutButtonClickHandler"></Button>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/relativeLayout1" android:layout_height="wrap_content" android:layout_width="match_parent">
+        <ImageButton android:layout_width="wrap_content" android:src="@drawable/icon" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:layout_marginLeft="37dp" android:id="@+id/myPictureImageButton" android:onClick="MyInfoPagePictureButtonClickHandler"></ImageButton>
+        <TextView android:layout_width="wrap_content" android:text="@string/myName" android:textAppearance="?android:attr/textAppearanceLarge" android:textSize="30dp" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toRightOf="@+id/myPictureImageButton" android:layout_marginLeft="27dp" android:id="@+id/myNameString"></TextView>
+    </RelativeLayout>
+    <TextView android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_width="wrap_content" android:text="@string/phone" android:id="@+id/phoneString"></TextView>
+    <TextView android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_width="match_parent" android:gravity="center" android:id="@+id/phoneDisplay"></TextView>
+    <TextView android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_width="wrap_content" android:text="@string/email" android:id="@+id/emailString"></TextView>
+    <TextView android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_width="match_parent" android:gravity="center" android:id="@+id/emailDisplay"></TextView>
+    <TextView android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_width="wrap_content" android:text="@string/customMessage" android:id="@+id/customMessageString"></TextView>
+    <TextView android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_width="match_parent" android:id="@+id/customMessageDisplay"></TextView>
+    <TextView android:layout_height="wrap_content" android:id="@+id/visibility" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_width="wrap_content" android:text="@string/visibility"></TextView>
+    <LinearLayout android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center" android:id="@+id/linearLayout1" android:layout_width="wrap_content" android:layout_gravity="center">
+        <Button android:layout_height="wrap_content" android:text="@string/edit" android:textSize="20dp" android:layout_width="match_parent" android:id="@+id/editMyInfoButton" android:onClick="EditButtonClickHandler"></Button>
+        <Button android:layout_height="wrap_content" android:text="@string/setVisibility" android:textSize="20dp" android:layout_width="match_parent" android:id="@+id/setVisibilityButton" android:onClick="SetVisibilityClickHandler"></Button>
+    </LinearLayout>
+    
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+    <TextView android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:background="@color/blue" android:layout_width="match_parent" android:textStyle="bold" android:gravity="center" android:textSize="40dp" android:id="@+id/editMyInfoTitle" android:text="@string/editMyInfo"></TextView>
+    <TextView android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content" android:id="@+id/touchImageToChangeString" android:text="@string/touchImageToBrowse"></TextView>
+    <RelativeLayout android:id="@+id/relativeLayout1" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:id="@+id/myPictureImageButtonAtEdit" android:onClick="MyInfoPagePictureButtonAtEditClickHandler"></ImageButton>
+    </RelativeLayout>
+    <TextView android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_height="wrap_content" android:id="@+id/myNameString" android:text="@string/name"></TextView>
+    <EditText android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textPersonName" android:text="@string/myName" android:id="@+id/nameTextAtEdit">
+        <requestFocus></requestFocus>
+    </EditText>
+    <TextView android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_width="wrap_content" android:text="@string/customMessage" android:id="@+id/customMessageString"></TextView>
+    <EditText android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/customMessageExample" android:id="@+id/customMessageTextAtEdit"></EditText>
+    <RelativeLayout android:id="@+id/relativeLayout2" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_toRightOf="@+id/saveButtonAtEditMyInfo" android:layout_marginLeft="48dp" android:id="@+id/cancelButtonAtEditMyInfo" android:text="@string/cancelAtEditMyInfo" android:textSize="20dp" android:onClick="CancelButtonClickHandler"></Button>
+        <Button android:layout_width="wrap_content" android:id="@+id/saveButtonAtEditMyInfo" android:textSize="20dp" android:layout_height="wrap_content" android:text="@string/saveAtEditMyInfo" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:layout_marginLeft="62dp" android:onClick="SaveButtonClickHandler"></Button>
+    </RelativeLayout>
+    <Button android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/changePasswordButton" android:text="@string/changePassword" android:textSize="20dp" android:onClick="ChangePasswordButtonClickHandler"></Button>
+    
+</LinearLayout>

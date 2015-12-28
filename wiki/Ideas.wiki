@@ -1,0 +1,7 @@
+#summary List of questions/issues we may need to answer/think about
+
+= Ideas =
+ * Server has master data store including accounts/groups/friends/locations (groups are not just a phone app concept)
+ * Allow selection of friends by group and geographical information, ie "show members of group 'family' within range '1 mile'"
+ * IM communication is "in application" like facebook IM 
+ * UML two way composition is single line with star..star

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+    <TextView android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:background="@color/blue" android:id="@+id/group" android:layout_width="match_parent" android:textStyle="bold" android:gravity="center" android:textSize="40dp" android:text="@string/addToGroups"></TextView>
+    <ScrollView android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/AddToGroupsScrollView">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:id="@+id/AddToGroupsLinearLayout">
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:layout_height="wrap_content" android:layout_gravity="center|center_horizontal|bottom" android:orientation="vertical" android:id="@+id/linearLayout2" android:layout_width="match_parent" android:gravity="center">
+        <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/confirmAdd" android:textSize="25dp" android:id="@+id/addToGroupsAddButton"></Button>
+    </LinearLayout>
+    
+</LinearLayout>

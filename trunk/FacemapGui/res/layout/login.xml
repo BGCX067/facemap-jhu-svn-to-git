@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent" android:gravity="center|center_vertical">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" android:textSize="30dp" android:textColor="@color/blue" android:textStyle="bold" android:layout_marginBottom="100dp" android:id="@+id/faceMapText"></TextView>
+    <LinearLayout android:layout_height="wrap_content" android:id="@+id/linearLayout1" android:layout_width="match_parent" android:orientation="vertical">
+        <TextView android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_width="wrap_content" android:text="@string/email" android:id="@+id/emailString"></TextView>
+        <EditText android:layout_height="wrap_content" android:layout_width="match_parent" android:inputType="textEmailAddress" android:id="@+id/emailTextAtLogin">
+            <requestFocus></requestFocus>
+        </EditText>
+        <TextView android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_width="wrap_content" android:text="@string/passwd" android:id="@+id/passwdString"></TextView>
+        <EditText android:layout_height="wrap_content" android:layout_width="match_parent" android:inputType="textPassword" android:id="@+id/passwdTextAtLogin"></EditText>
+    </LinearLayout>
+    <Button android:layout_height="wrap_content" android:layout_marginTop="50dp" android:layout_width="wrap_content" android:text="@string/ok" android:textSize="25dp" android:id="@+id/okButtonAtLogin" android:onClick="LoginPageOkButtonClickHandler"></Button>
+    
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+    <TextView android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:background="@color/blue" android:layout_width="match_parent" android:textStyle="bold" android:gravity="center" android:textSize="40dp" android:text="@string/app_name" android:id="@+id/facemapTitle"></TextView>
+    <Button android:layout_height="wrap_content" android:layout_width="match_parent" android:textSize="20dp" android:text="@string/contacts" android:id="@+id/contactsButtonAtMenu" android:onClick="MenuPageContactsButtonClickHandler"></Button>
+    <Button android:layout_height="wrap_content" android:layout_width="match_parent" android:textSize="20dp" android:text="@string/locate" android:id="@+id/locateButtonAtMenu" android:onClick="MenuPageLocateButtonClickHandler"></Button>
+    <Button android:layout_height="wrap_content" android:layout_width="match_parent" android:textSize="20dp" android:text="@string/myInfo" android:id="@+id/myInfoButtonAtMenu" android:onClick="MenuPageMyInfoButtonClickHandler"></Button>
+    <Button android:layout_height="wrap_content" android:layout_width="match_parent" android:textSize="20dp" android:id="@+id/friendRequestButton"></Button>
+    
+</LinearLayout>

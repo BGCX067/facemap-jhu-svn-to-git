@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+    <TextView android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:background="@color/blue" android:layout_width="match_parent" android:textStyle="bold" android:gravity="center" android:textSize="40dp" android:text="@string/contacts" android:id="@+id/contactsTitle"></TextView>
+    <Button android:layout_height="wrap_content" android:layout_width="match_parent" android:textSize="20dp" android:text="@string/allContacts" android:id="@+id/allContactsButton" android:onClick="ContactsPageAllContactsButtonClickHandler"></Button>
+    <Button android:layout_height="wrap_content" android:layout_width="match_parent" android:textSize="20dp" android:text="@string/groups" android:id="@+id/groupsButton" android:onClick="ContactsPageGroupsButtonClickHandler"></Button>
+    
+</LinearLayout>

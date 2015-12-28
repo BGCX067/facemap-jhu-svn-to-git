@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:background="@color/blue" android:layout_width="match_parent" android:textStyle="bold" android:gravity="center" android:textSize="40dp" android:id="@+id/groupUnclassifiedTitle" android:text="@string/unclassified"></TextView>
+    <Button android:layout_height="wrap_content" android:text="@string/membersButton" android:layout_width="match_parent" android:textSize="20dp" android:id="@+id/unclassifiedMembersButton"></Button>
+    <Button android:layout_height="wrap_content" android:layout_width="match_parent" android:text="@string/deleteMemberButton" android:textSize="20dp" android:id="@+id/deleteUnclassifiedMembersButton"></Button>
+    <Button android:layout_height="wrap_content" android:layout_width="match_parent" android:text="@string/blockMemberButton" android:textSize="20dp" android:id="@+id/blockUnclassifiedMembersButton"></Button>
+    <Button android:layout_height="wrap_content" android:layout_width="match_parent" android:text="@string/unblockMembers" android:textSize="20dp" android:id="@+id/unblockUnclassifiedMembersButton"></Button>
+    <Button android:layout_height="wrap_content" android:layout_width="match_parent" android:text="@string/sendGroupEmail" android:textSize="20dp" android:id="@+id/sendGroupUnclassifiedEmailButton"></Button>
+    <Button android:layout_height="wrap_content" android:layout_width="match_parent" android:text="@string/blockGroup" android:textSize="20dp" android:id="@+id/blockGroupUnclassifiedButton"></Button>
+    <Button android:layout_height="wrap_content" android:layout_width="match_parent" android:text="@string/unblockGroup" android:textSize="20dp" android:id="@+id/unblockGroupUnclassifiedButton"></Button>
+    
+</LinearLayout>

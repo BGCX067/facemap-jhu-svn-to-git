@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/FacemapClient"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/FacemapDomainModel"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/FacemapEntities"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/FacemapTest"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

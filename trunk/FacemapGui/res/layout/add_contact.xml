@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+    <TextView android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:background="@color/blue" android:id="@+id/group" android:layout_width="match_parent" android:textStyle="bold" android:gravity="center" android:textSize="40dp" android:text="@string/addAContact"></TextView>
+    <TextView android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_width="wrap_content" android:textSize="25dp" android:id="@+id/phoneString" android:text="@string/phone"></TextView>
+    <EditText android:layout_height="wrap_content" android:layout_width="match_parent" android:inputType="phone" android:id="@+id/phoneInputEditText"></EditText>
+    <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/orEmailString" android:text="@string/orEmail"></TextView>
+    <EditText android:layout_height="wrap_content" android:layout_width="match_parent" android:inputType="textEmailAddress" android:id="@+id/emailInputEditText"></EditText>
+    <TextView android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_width="wrap_content" android:text="@string/or" android:id="@+id/or"></TextView>
+    <TextView android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_width="wrap_content" android:id="@+id/chooseFromContact" android:text="@string/chooseFromContact" ></TextView>
+    <Button android:layout_height="wrap_content" android:layout_width="match_parent" android:text="@string/chooseFromContact" android:textSize="22dp" android:id="@+id/chooseFromContactButton" android:onClick="chooseButtonAtAddContactClickHandler"></Button>
+    <LinearLayout android:layout_height="wrap_content" android:id="@+id/linearLayout1" android:layout_width="match_parent" android:orientation="vertical" android:gravity="center">
+        <Button android:layout_height="wrap_content" android:text="@string/request" android:layout_width="wrap_content" android:textSize="30dp" android:layout_marginTop="15dp" android:id="@+id/requestFriendButton" android:onClick="requestButtonAtAddContactClickHandler"></Button>
+    </LinearLayout>
+    
+</LinearLayout>

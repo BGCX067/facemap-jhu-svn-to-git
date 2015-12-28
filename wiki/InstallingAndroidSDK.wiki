@@ -1,0 +1,18 @@
+#summary Installing Android SDK and using Eclipse
+
+= Introduction =
+
+http://developer.android.com/sdk/index.html
+
+
+== Installing Details ==
+  # Download and install Android SDK from above
+  # Run Android SDK manager
+  # Download Android 2.2 and Google API revision 8
+  # Go to Eclipse->Help->Install New Software
+    # https://dl-ssl.google.com/android/eclipse/ for Eclipse ADT Plugin
+    # http://keytool.sourceforge.net/update for Keytool
+  
+== Android Projects ==
+  # New->Project->Android Project
+  # Name, package, activity

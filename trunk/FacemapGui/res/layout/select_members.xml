@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+    <TextView android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:background="@color/blue" android:layout_width="match_parent" android:textStyle="bold" android:gravity="center" android:textSize="40dp" android:id="@+id/GroupActionTitle"></TextView>
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="vertical" android:gravity="center" android:id="@+id/linearLayout1">
+        <ScrollView android:id="@+id/scrollView1" android:layout_height="wrap_content" android:layout_width="match_parent">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:id="@+id/GroupActionLinearLayout">
+            </LinearLayout>
+        </ScrollView>
+        <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginTop="15dp" android:textSize="20dp" android:id="@+id/ActionButton"></Button>
+    </LinearLayout>
+    
+</LinearLayout>

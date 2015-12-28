@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/relativeLayout1" android:layout_height="wrap_content" android:layout_width="match_parent">
+        <TextView android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:background="@color/blue" android:layout_width="match_parent" android:textStyle="bold" android:gravity="center" android:textSize="40dp" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:paddingRight="20dp" android:id="@+id/allContactsTitle" android:text="@string/allContacts"></TextView>
+        <ImageButton android:layout_width="wrap_content" android:src="@android:drawable/ic_input_add" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:id="@+id/addContactButton" android:onClick="AddContactAtAllContactsButtonClickHandler"></ImageButton>
+    </RelativeLayout>
+    <ScrollView android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/friendListscrollView">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:id="@+id/friendListLinearLayout">
+        </LinearLayout>
+    </ScrollView>
+    
+</LinearLayout>

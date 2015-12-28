@@ -1,0 +1,18 @@
+#summary Installing subclipse and checking out the project
+
+= Installing Subclipse =
+ * Eclipse -> Help -> Install New Software
+ * Add "http://subclipse.tigris.org/update_1.6.x"
+ * Install everything (or just the required packages)
+ * Restart eclipse
+
+= Checking out the working copy =
+ * Open the "SVN Repositories" view
+   * Window -> Show View -> Other
+ * Click "Add SVN Repository"
+ * Enter "https://facemap-jhu.googlecode.com/svn"
+ * Your username is your full email address (eg ibelievekip@gmail.com)
+ * Your password is different from your google account password and can be found here https://code.google.com/hosting/settings
+ * expand trunk
+ * right click FacemapDomainModel and select Checkout
+ * click Finish

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/FacemapDomainModel"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/FacemapEntities"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/FacemapClient"/>
+	<classpathentry kind="lib" path="lib/auto-depends.jar"/>
+	<classpathentry kind="lib" path="lib/bean-validator.jar"/>
+	<classpathentry kind="lib" path="lib/common-util.jar"/>
+	<classpathentry kind="lib" path="lib/config-api.jar"/>
+	<classpathentry kind="lib" path="lib/config-types.jar"/>
+	<classpathentry kind="lib" path="lib/config.jar"/>
+	<classpathentry kind="lib" path="lib/deployment-common.jar"/>
+	<classpathentry kind="lib" path="lib/dol.jar"/>
+	<classpathentry kind="lib" path="lib/ejb-container.jar"/>
+	<classpathentry kind="lib" path="lib/ejb.security.jar"/>
+	<classpathentry kind="lib" path="lib/gf-client.jar"/>
+	<classpathentry kind="lib" path="lib/glassfish-api.jar"/>
+	<classpathentry kind="lib" path="lib/glassfish-corba-asm.jar"/>
+	<classpathentry kind="lib" path="lib/glassfish-corba-codegen.jar"/>
+	<classpathentry kind="lib" path="lib/glassfish-corba-csiv2-idl.jar"/>
+	<classpathentry kind="lib" path="lib/glassfish-corba-internal-api.jar"/>
+	<classpathentry kind="lib" path="lib/glassfish-corba-newtimer.jar"/>
+	<classpathentry kind="lib" path="lib/glassfish-corba-omgapi.jar"/>
+	<classpathentry kind="lib" path="lib/glassfish-corba-orb.jar"/>
+	<classpathentry kind="lib" path="lib/glassfish-corba-orbgeneric.jar"/>
+	<classpathentry kind="lib" path="lib/glassfish-naming.jar"/>
+	<classpathentry kind="lib" path="lib/gmbal.jar"/>
+	<classpathentry kind="lib" path="lib/hk2-core.jar"/>
+	<classpathentry kind="lib" path="lib/internal-api.jar"/>
+	<classpathentry kind="lib" path="lib/javax.ejb.jar"/>
+	<classpathentry kind="lib" path="lib/kernel.jar"/>
+	<classpathentry kind="lib" path="lib/management-api.jar"/>
+	<classpathentry kind="lib" path="lib/orb-connector.jar"/>
+	<classpathentry kind="lib" path="lib/orb-enabler.jar"/>
+	<classpathentry kind="lib" path="lib/orb-iiop.jar"/>
+	<classpathentry kind="lib" path="lib/security.jar"/>
+	<classpathentry kind="lib" path="lib/ssl-impl.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/FacemapTest"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
